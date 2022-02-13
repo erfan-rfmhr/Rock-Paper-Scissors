@@ -10,6 +10,9 @@ username = input('Enter your name:')
 
 round = int(input('How many rounds do you play: '))
 
+while round <= 0:
+    round = int(input('You can\'t play 0 or negative round! Try again: '))
+
 user_score = 0
 ai_score = 0
 
