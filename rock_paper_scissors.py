@@ -18,9 +18,9 @@ ai_score = 0
 
 
 while True:
-    print(f'\n{username} score: {user_score}\tComputer score: {ai_score}')
+    print(f'\n{username} score: {user_score}\tComputer score: {ai_score}')      #player will choose between r,p and p
     user_choice = input('\nChoose between Rock, Paper and Scissors (enter r,p or s):')
-    ai_choice = random.choice(list(game.keys()))
+    ai_choice = random.choice(list(game.keys()))    #ai chooses randomly from game dictionary keys
     print(f'Your choice: {game[user_choice]}\nComputer choice: {game[ai_choice]}')
 
     if (user_choice == 'r' and ai_choice == 's') or (user_choice == 's' and ai_choice == 'p') or (user_choice == 'p' and ai_choice == 'r'):
